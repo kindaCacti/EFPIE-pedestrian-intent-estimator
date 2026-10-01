@@ -1,3 +1,3 @@
 [submodule "SOVA-signs-det-dev"]
-	path = SOVA-signs-det-dev
+	path = ./src/SOVA-signs-det-dev
 	url = git@github.com:Rys00/SOVA-signs-det-dev.git
