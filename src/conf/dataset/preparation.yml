@@ -1,0 +1,19 @@
+dataset_preparation:
+  source_manifest: conf/dataset/source_sequences.yml
+  output_dir: data/trajectory/prepared/camera-v1
+  image_mode: symlink
+  frame_stride: 1
+  inference_batch_size: 8
+  pedestrian_class_ids: [0]
+  confidence_threshold: 0.30
+  tracker:
+    type: bytetrack
+    high_confidence_threshold: 0.50
+    low_confidence_threshold: 0.10
+    match_iou_threshold: 0.30
+    track_buffer_frames: 30
+  validation:
+    min_track_length_frames: 20
+    reject_nonmonotonic_timestamps: true
+    max_failure_fraction: 0.05
+    max_failures: 100

@@ -1,0 +1,7 @@
+task: trajectory
+train_dataloader:
+  dataset:
+    prepared_dir: data/trajectory/prepared/pie-sample-v1
+val_dataloader:
+  dataset:
+    prepared_dir: data/trajectory/prepared/pie-sample-v1

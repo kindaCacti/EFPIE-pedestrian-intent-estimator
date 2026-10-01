@@ -1,0 +1,3 @@
+__include__: ["base.yml"]
+trajectory:
+  hidden_size: 64

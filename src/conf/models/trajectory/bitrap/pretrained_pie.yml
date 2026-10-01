@@ -1,0 +1,7 @@
+__include__: ["np.yml"]
+resume: models/bitrap/pie_np_k20.pth
+bitrap:
+  pretrained_profile: pie_np
+  decoder_with_z: false
+  reference_image_size: [1920, 1080]
+output_dir: outputs/trajectory/bitrap_pretrained_pie

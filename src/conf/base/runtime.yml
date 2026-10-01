@@ -1,0 +1,8 @@
+task: trajectory
+device: null
+epochs: 30
+checkpoint_freq: 1
+output_dir: outputs/trajectory
+use_amp: false
+clip_max_norm: 0.0
+seed: 42

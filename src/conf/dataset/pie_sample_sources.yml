@@ -1,0 +1,9 @@
+sequences:
+  - sequence_id: pie_set01_video0001
+    video: ../../data/trajectory/raw/pie/video_0001.mp4
+    fps: 30
+    split: train
+  - sequence_id: pie_set01_video0002
+    video: ../../data/trajectory/raw/pie/video_0002.mp4
+    fps: 30
+    split: val
