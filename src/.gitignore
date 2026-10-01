@@ -1,0 +1,15 @@
+.venv/
+.uv-cache/
+.python/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+outputs/
+data/
+/models/
+third_party/bitrap/
+third_party/rtdetrv4/
+third_party/deimv2/
+third_party/ecdet/
+third_party/yolov6/

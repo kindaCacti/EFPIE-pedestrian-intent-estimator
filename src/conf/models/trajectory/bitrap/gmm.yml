@@ -1,0 +1,4 @@
+__include__: ["base.yml"]
+bitrap:
+  variant: gmm
+output_dir: outputs/trajectory/bitrap_gmm

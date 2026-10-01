@@ -1,0 +1,11 @@
+__include__:
+  - ../SOVA-signs-det-dev/conf/models/rtdetrv4/s.yml
+  - ../SOVA-signs-det-dev/conf/dataset/coco.yml
+
+rtdetrv4_checkpoint: models/rtdetrv4/rtdetrv4_s.pth
+device: cpu
+
+model:
+  overrides:
+    HGNetv2:
+      pretrained: false

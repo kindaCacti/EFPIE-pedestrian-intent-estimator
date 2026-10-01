@@ -1,0 +1,20 @@
+__include__: ["../gru/base.yml"]
+model:
+  adapter: bitrap
+temporal:
+  cache:
+    max_frames: 64
+  sequence:
+    observation_frames: 15
+    prediction_frames: 45
+bitrap:
+  variant: deterministic
+  coordinate_representation: normalized_cxcywh
+  observation_frames: 15
+  prediction_frames: 45
+  sampling_fps: 30
+  num_samples: 20
+  hidden_size: 256
+  latent_dim: 32
+  kl_weight: 0.01
+output_dir: outputs/trajectory/bitrap_d

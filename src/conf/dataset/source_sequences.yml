@@ -1,0 +1,10 @@
+# Paths are relative to this manifest. Assign each source to exactly one split.
+sequences:
+  - sequence_id: camera_train
+    frame_dir: ../../data/trajectory/raw/camera_train
+    fps: 30
+    split: train
+  - sequence_id: camera_val
+    video: ../../data/trajectory/raw/camera_val.mp4
+    fps: 30
+    split: val

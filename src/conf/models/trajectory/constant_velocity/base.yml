@@ -1,0 +1,5 @@
+__include__: ["../gru/base.yml"]
+model:
+  adapter: constant_velocity
+epochs: 1
+output_dir: outputs/trajectory/constant_velocity

@@ -1,0 +1,20 @@
+__include__: ["../../../base/runtime.yml", "../../../base/temporal.yml"]
+task: trajectory
+model:
+  adapter: gru_trajectory
+trajectory:
+  hidden_size: 128
+  learning_rate: 0.001
+  weight_decay: 0.0
+output_dir: outputs/trajectory/gru
+epochs: 30
+use_amp: false
+use_ema: false
+train_dataloader:
+  batch_size: 32
+  num_workers: 0
+val_dataloader:
+  batch_size: 32
+  num_workers: 0
+evaluation:
+  mode: detected_history

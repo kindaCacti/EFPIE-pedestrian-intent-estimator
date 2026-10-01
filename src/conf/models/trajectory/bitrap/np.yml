@@ -1,0 +1,4 @@
+__include__: ["base.yml"]
+bitrap:
+  variant: np
+output_dir: outputs/trajectory/bitrap_np

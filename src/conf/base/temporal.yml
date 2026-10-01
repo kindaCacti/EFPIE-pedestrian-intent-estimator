@@ -1,0 +1,19 @@
+temporal:
+  cache:
+    max_frames: 32
+    store_images: false
+    require_monotonic_timestamps: true
+  tracker:
+    type: bytetrack
+    pedestrian_class_ids: [0]
+    high_confidence_threshold: 0.50
+    low_confidence_threshold: 0.10
+    match_iou_threshold: 0.30
+    track_buffer_frames: 30
+  sequence:
+    observation_frames: 8
+    prediction_frames: 12
+    allow_padded_history: false
+    allow_observation_gaps: false
+    frame_stride: 1
+    point: bottom_center_normalized
